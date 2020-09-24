@@ -1,0 +1,437 @@
+div.product
+{
+	margin-top: 50px;
+	margin-left: 50px;
+	width: 15%;
+	float: left;
+	transition: margin-top 0.6s ease;
+}
+.thumb
+{
+	width: 100%;
+	height: 200px;
+}
+.product:hover
+{
+	cursor: pointer;
+	margin-top: 28px;
+}
+.title
+{
+	font-family: Lobster;
+	text-align: center;
+	font-style: bold;
+	font-size: 12.5pt;
+	color: white;
+}
+div.secondBanner
+{
+	background-color: #90d5ec;
+	background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+	width:100%;
+	height: 300px;
+}
+div.thirdBanner
+{
+	margin-top: 5px;
+	background-color: #e96196;
+	background-image: linear-gradient(315deg, #e96196 0%, #ffffff 74%);
+}
+.thirdThumb
+{
+	margin-left: 25px;
+	width: 30%;
+	height: 30%;
+}
+.dellSpecs
+{
+	float: left;
+	
+}
+.specs
+{
+	margin-top: -200px;
+	margin-left: 380px;
+	text-align: center;
+	font-family: Russo One;
+	font-style: bold;
+	font-size: 14pt;
+}
+.thirdBanner:hover
+{
+	cursor: pointer;
+}
+div.fourthBanner
+{
+	margin-top: 15px;
+	float: left;
+	background-color: #f39f86;
+	background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+	width: 100%;
+	height: 300px;
+}
+div.fourthBanner:hover
+{
+	cursor: pointer;
+}
+.acerThumb
+{
+	margin-left: 25px;
+	width: 30%;
+	height: 30%;
+}
+.acerSpecs
+{
+	margin-left: 350px;
+	margin-top: -200px;
+	text-align: center;
+	font-family: Russo One;
+	font-style: bold;
+	font-size: 14pt;
+}
+
+													/* IPhone SE Styles goes here*/
+
+.imageContainer
+{
+	margin-top: 100px;
+	margin-left: 30%;
+	width: 30%;
+	height: 350px;
+	background-color: white;
+}
+.images
+{
+	margin-top: -25px;
+	display: none;
+	width: 50%;
+	height: 250px;
+}
+.image
+{
+	margin-left: 60%;
+	width: 80%;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 40.1%;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: black;/*#344955;rgba(0,0,0,0.8);*/
+  color: white;
+}
+.iphoneSpecs
+{
+	margin-left: 30%;
+}
+.cost
+{
+	margin-top: -50px;
+	margin-left: -100px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: Lobster;
+	font-style: bold;
+	font-size: 25pt;
+	color: black;
+}
+div.buttons
+{
+	margin-top: 5%;
+	margin-left: 30%;
+}
+
+.actionBtns
+{
+	background-color: #ff4e00;
+	background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+	border-radius: 25px;
+	width: 20%;
+	height: 50px;
+	font-family: Krona One;
+	font-style: bold;
+	font-size: 13pt;
+	transition: width 0.6s ease;
+	position: relative;
+}
+.actionBtns:hover
+{
+	border-color: #ff4e00;
+	cursor: pointer;
+	/*width: 20%;*/
+/*	color: white;*/
+}
+.actionBtns:focus
+{
+	outline: none;
+}
+
+
+.sticky-link
+{
+	display: inline-block;
+	color: white;
+	font-size: 15pt;
+	font-style: bold;
+	margin-left: 25px;
+	margin-top: 10px;
+	transition: color 0.6s;
+}
+.sticky-link:hover
+{
+	color: orange;
+}
+.dropit /*The header*/
+{
+	/*float: left;*/
+	position: relative;
+   display: inline-block;
+}
+.dropped /*The hidden content*/
+{
+	border-radius: 17px;
+	opacity: 0.9;
+	display: none;
+	position: absolute;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 99;
+	background-color: #424242;
+ 	min-width: 160px;
+ 	text-align: center;
+ 	overflow: hidden;
+}
+.dropit:hover .dropped /*will display block*/
+{display: block;}
+
+.dropped-link /*anchor link*/
+{
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: white;
+	width: 100%;
+}
+.dropped ul li:hover
+{
+	color: black;
+	background-color: #BDBDBD;
+}
+.dropped-link:hover
+{
+	color: black;
+}
+
+div.Global_header
+{
+	text-align: center;
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+  	margin-left: -0.5vw;
+  	margin-top: -0.6vw;
+  	right: 0;
+	width: 101%;
+	height: 50px;
+	background-color: navy;
+}
+div.Global_footer
+{
+	background-color: #0cbaba;
+	background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	margin-top: 20px;
+	width: 100%;
+	height: 250px;
+	display: inline-block;
+	position: absolute;	
+	margin-left: -7px;
+}
+
+html,body { height:100%; }
+
+.footer-tag
+{
+	display: inline-block;
+	color: white;
+	font-size: 1.5vw;
+	transition: color 0.6s ease;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.footer-link
+{
+	display: inline-block;
+	/*margin-top: 15px;*/
+	color: white;
+	font-size: 12pt;
+	margin-top: 6px;
+	/*margin-bottom: auto;
+	/*margin-left: 50px;*/
+	z-index: 1;
+	opacity: 1;
+	transition: color 0.65s;
+}
+.social-ico
+{
+	float: left;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+/*	margin-top: 12px;*/
+	margin-left: 40px;
+	text-align: center;
+	cursor: pointer;
+	display: table-cell;
+    vertical-align: middle;
+}
+.fb-logo:hover
+{
+	background-color:#2962FF;
+	color: white;;
+}
+.youtube-logo:hover
+{
+	background-color: red;
+	color: white;
+}
+.insta-logo:hover
+{
+	background: linear-gradient(45DEG,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D);
+}
+.twitter-logo:hover
+{
+	background-color:#2979FF;
+}
+div.vl
+{
+	margin-top: 25px;
+	margin-left: 25px;
+	float: left;
+	border-left: 2px solid #BDBDBD;
+	height: 200px;
+}
+.e-contact
+{
+	float: left;
+	width: auto;
+}
+div.Global-social
+{
+	float: left;
+	width: auto;
+}
+.Social
+{
+	vertical-align: middle;
+	/*margin-top: 7px;*/
+	font-size: 30pt;
+}
+div.Global_specs
+{
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	margin-left: 25%;
+	margin-right: 25%;
+	width: auto;
+}
+
+div.slide_container
+{
+	position: relative;
+	margin-top: 20px;
+	margin-left: 12.5%;
+	width: 75%;
+	height: 50%;
+	border:none;
+	display: inline-block;
+	overflow: hidden;
+	cursor: pointer;
+}
+div.slides
+{
+	width:300%;
+	height: 250px;
+	-webkit-transition:all 1.0s ease-in-out;
+	-moz-transition:all 1.0s ease-in-out;
+	-o-transition:all 1.0s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+.banner
+{
+	text-align: center;
+	width: 1000px;
+	height: 250px;
+	overflow: hidden;
+	float: left;
+	cursor: pointer;
+	z-index: -1;
+}
+
+.Banner1
+{
+	background-color: black;
+}
+.Banner2
+{
+	background-color: black;
+}
+.Banner3
+{	
+	text-align: center;
+	background-color: black;
+}
+.Banner4
+{
+	background-color: black;
+}
+.Banner5
+{
+	background-color: black;
+}
+.products_GridContainer
+{
+	border:1px solid #BDBDBD;
+	box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.25);
+	margin-top: 25px;
+	display: grid;
+  	grid-template-columns: auto auto auto auto;
+  	padding: 25px;
+ 	overflow: hidden;
+ 	border-radius: 20px;
+	 background-color: white;
+	 position: relative;
+}
+.products_Grid
+{
+	/*text-align: center;*/
+	width: 70%;
+	height: 92%;
+	background-color: white;
+	border:1px solid #BDBDBD;
+	margin-top:20px;
+	border:none;
+	overflow: hidden;
+}
+.products_Grid:hover
+{
+	cursor: pointer;
+	margin-top:-5px;
+    box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.25);
+    color: navy;
+    border-radius: 15px;
+}

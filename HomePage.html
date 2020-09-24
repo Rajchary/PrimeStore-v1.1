@@ -1,0 +1,357 @@
+												<!--This is Beta Version-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page (Beta version)</title>
+	<link rel = "icon" href = "https://img.icons8.com/emoji/96/000000/p-button-emoji.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="CSS\PrimeStoreStyles.css">
+	<link rel="stylesheet" type="text/css" href="CSS\productsCSS.css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=PT Sans' rel='stylesheet'>
+
+	<script src="https://kit.fontawesome.com/7f01c78b96.js" crossorigin="anonymous"></script>
+	<!--<script src="https://gist.github.com/ricardozea/abb9f98a19f6d04a0269.js"></script>-->
+	<style type="text/css">
+		img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+			}
+	.prev, .next {
+					  cursor: pointer;
+					  top: 36%;
+					  width: auto;
+					  padding: 16px;
+					  color: white;
+					  font-weight: bold;
+					  font-size: 30px;
+					  transition: 0.6s ease;
+					  border-radius: 0 3px 3px 0;
+					  user-select: none;
+					  
+					}
+					.prev{left: 0;}
+		.next {
+				  right:0;
+				  border-radius: 3px 0 0 3px;				
+			  }
+		.prev:hover, .next:hover 
+		{
+			 background-color: black;/*#344955;rgba(0,0,0,0.8);*/
+			 color: white;
+		}
+		.smart
+		{
+			width: 150px;
+			height: 300px;
+			margin-left: 25%;
+		}
+		.center
+		{
+			margin-top: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			width: auto;
+			height: 150px;
+		}
+		.grid_Specs
+		{
+			text-align: center;
+			font-family: Russo One;
+			font-style: bold;
+			font-size: 15pt;
+		}
+		.box-heading
+		{
+			text-align: center;
+			font-family: Russo One;
+			font-style: bold;
+			color:navy;
+			font-size: 20pt;
+		}
+		body
+		{
+			background-color: #F5F5F5;
+		}
+		
+	</style>
+</head>
+<body onscroll="setScroll()">
+	<div class="logo_container">
+		<div class="header">
+			<h1 class="bannerHeader">PrimeStore</h1>
+		</div>
+	</div>
+	<div  class="main_header">
+		<div class="dropit">
+			<a href="#" class="mainHeader_link">Electronics</a>
+			<div class="dropped">
+				<ul>
+					<li><a href="#" class="dropped-link">Mobiles</a></li>
+					<li><a href="#" class="dropped-link">Mobiles</a></li>
+					<li><a href="#" class="dropped-link">Mobiles</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="dropit">
+			<a href="#" class="mainHeader_link">Home Appliance</a>
+			<div class="dropped">
+				<ul>
+					<li><a href="#" class="dropped-link">Mobiles</a></li>
+					<li><a href="#" class="dropped-link">Mobiles</a></li>
+					<li><a href="#" class="dropped-link">Mobiles</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="HomeSticky_Container" id="sticky">
+		<div style="float: left; margin-left: 25px;margin-top: 15px; cursor: pointer;"><img src="https://img.icons8.com/emoji/48/000000/p-button-emoji.png"/></div>
+		<div class="Flash_Nav"><!--Operated as Flashlite-->
+			<a href="HomePage.html" class="ScrollTag_link" style="margin-left: 50px;">Home</a>
+			<a href="#" class="ScrollTag_link">Trending<img src="https://img.icons8.com/emoji/24/000000/fire.png" class="add_on_ico"/></a>
+			<a href="#" class="ScrollTag_link">Offers<img src="https://img.icons8.com/color/24/000000/discount--v1.png" class="add_on_ico" /></a>
+			<a href="PrimeSpot_signup.html" class="ScrollTag_link">Signup</a>
+		</div>
+	</div>
+
+	<div class="slide_container">
+		<div class="slides" id="move">
+			<div class="banner Banner1">
+				<img src="https://static.hub.91mobiles.com/wp-content/uploads/2020/07/poco_m2_pro_launch_feat.jpg" width="1000px" height="250px" >
+			</div>
+			<div class="banner Banner2">
+				<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/SamsungM/M51/GW_3rdsep/Rv3_GW/P38983965_IN_WLME_SamsungGalaxy_M51_New_Launch_Mob_Hero_1242x450._CB406662233_SY500_.jpg" >
+			</div>
+			<div class="banner Banner3">
+				<img src="https://rukminim1.flixcart.com/flap/844/140/image/fd519d61f7887114.jpg?q=50" style="margin-top: 50px">
+			</div>
+			<div class="banner Banner4">
+				<img src="samsung.jpg">
+			</div>
+			<div class="banner Banner5">
+				<img src="lap.jpg" style="margin-top: 25px;">
+			</div>
+		</div>
+		<p class="prev" onclick="move(1)" title="Previous">&#10094;</p>
+		<p class="next" onclick="move(-1)" title="Next">&#10095;</p>
+	</div>
+
+	<section class="parent_go-Top" id="backTo_Top">
+		<div class="child_go-Top" >
+			<i class="fas fa-sort-up" style="margin-top: 25%;" onclick="scrollToTop();return false"></i>
+		</div>
+	</section>
+
+	<p class="box-heading">TRENDING PURCHASES<i class="fab fa-free-code-camp"></i></p>
+	<div class="products_GridContainer">
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/312/312/k6tniq80/mobile/y/z/q/mi-redmi-8a-dual-m2001c3k3i-original-imafp767fsgk9gdv.jpeg?q=70" class="center">
+			<p class="grid_Specs">Redmi 8A Dual</p>
+		</div>
+		<div class="products_Grid" onclick="{teleport('narzo10')}">
+			<img src="https://rukminim1.flixcart.com/image/312/312/k8ddoy80/mobile/n/m/w/realme-narzo-10-rmx2040-original-imafqectbhfgxutg.jpeg?q=70" class="center">
+			<p class="grid_Specs">Realme Narzo 10</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/312/312/kcdp5zk0/mobile/g/t/z/realme-c11-rmx2185-original-imaftjf8nadztg9c.jpeg?q=70" class="center">
+			<p class="grid_Specs">Realme c11</p>
+		</div>
+		<div class="products_Grid" onclick="{teleport('pocox2')}">
+			<img src="https://rukminim1.flixcart.com/image/312/312/k65d18w0/mobile/w/u/h/poco-x2-mzb9013in-original-imafzz2hdysz9njg.jpeg?q=70" class="center">
+			<p class="grid_Specs">Poco X2</p>
+		</div>
+		<div class="products_Grid" onclick="{teleport('redmi9')}">
+			<img src="https://rukminim1.flixcart.com/image/312/312/kcdp5zk0/mobile/6/e/k/mi-redmi-note-9-pro-mzb9105in-original-imaftgy6gwe9vnqr.jpeg?q=70" class="center">
+			<p class="grid_Specs">Redmi Note 9 PRO</p>
+		</div>
+		<div class="products_Grid" onclick="{teleport('iphoneSE')}">
+			<img src="https://rukminim1.flixcart.com/image/312/312/k9loccw0/mobile/6/b/z/apple-iphone-se-mxd12hn-a-original-imafrcqfsuzwa3dz.jpeg?q=70" class="center">
+			<p class="grid_Specs">IPHONE SE</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/312/312/kcauaa80/mobile/c/w/a/poco-m2-pro-mzb9625in-original-imaftga2ytmnt7ac.jpeg?q=70" class="center">
+			<p class="grid_Specs">Poco M2 Pro</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/312/312/kcm9t3k0/mobile/p/p/q/vivo-x50-pro-vivo-2006-original-imaftppahwbc6myx.jpeg?q=70" class="center">
+			<p class="grid_Specs">Vivo X50 Pro</p>
+		</div>
+	</div><br><br><br>
+	<p class="box-heading">Go Smart<img src="https://img.icons8.com/color/64/000000/smart.png"/></p>
+	<div class="products_GridContainer">
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/416/416/jmi22kw0/smartwatch/y/d/j/mtf32hn-a-apple-original-imaf9ec8ssmfcuxf.jpeg?q=70" class="center">
+			<p class="grid_Specs">Apple Watch Series3</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/312/312/kalecnk0/smartwatch/m/8/e/rma161-android-realme-original-imafs4hysvghjhaw.jpeg?q=70" class="center">
+			<p class="grid_Specs">Realme Original</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/312/312/k1s6ljk0/smartwatch/x/j/p/sm-r820nzkainu-samsung-original-imafha69nbv28shz.jpeg?q=70" class="center">
+			<p class="grid_Specs">Samsung Active 2</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/312/312/k7f34i80/smart-band-tag/k/h/v/xmsh07hm-mi-original-imafpnxz4vgnzabw.jpeg?q=70" class="center">
+			<p class="grid_Specs">Mi Smart Band4</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/312/312/k33c4nk0/smart-assistant/a/j/k/nest-mini-ga00781-in-google-original-imafmauqguud8wsz.jpeg?q=70" class="center">
+			<p class="grid_Specs">Google Nest Mini(2nd Gen)</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/312/312/jfsknm80/smart-assistant/b/h/m/home-ghome-google-original-imaf46b7mrhmpzdg.jpeg?q=70" class="center">
+			<p class="grid_Specs">Google Home</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/312/312/kbl4cy80/smart-assistant/q/q/d/nest-mini-with-smitch-wifi-rgb-smart-bulb-7w-ga00781-in-sb160207-original-imafsw3j4juykt5z.jpeg?q=70" width="150px" class="center">
+			<p class="grid_Specs">Google Nest Mini<br>with RGB Bulb</p>
+		</div>
+	</div>
+	<br><br>
+
+	<p class="box-heading">Covid-19(Essentials)<i class="fas fa-head-side-mask"></i></p>
+	<div class="products_GridContainer">
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/416/416/ka1e6q80/mask-respirator/e/g/f/kn95-face-mask-anti-pollution-anti-virus-breathable-face-mask-original-imafrp86u9cfhrhy.jpeg?q=70" class="center">
+			<p class="grid_Specs">N95 Mask</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/416/416/k8ot7rk0/mask-respirator/5/z/v/12535-black-wildcraft-original-imafqn9udrezhxez.jpeg?q=70" class="center">
+			<p class="grid_Specs">WildCraft Mask</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/416/416/k8ro3gw0/hand-wash-sanitizer/f/g/2/500-total-hand-sanitizer-bottle-lifebuoy-original-imafqpcsnxfb7qxr.jpeg?q=70"  class="center">
+			<p class="grid_Specs">Lifebuoy<br>Hand Sanitizer</p>
+		</div>
+		<div class="products_Grid">
+			<img src="https://rukminim1.flixcart.com/image/416/416/kcjexe80/hand-wash-sanitizer/w/n/h/100-fresh-hand-sanitizer-liquid-100-bottle-savlon-original-imaftnadvjzzut6m.jpeg?q=70" class="center">
+			<p class="grid_Specs">Savlon<br>Hand Sanitizer</p>
+		</div>
+	</div><br><br><br>
+
+	<div class="Global_footer">
+		<div class="e-contact">
+			<p class="footer-tag" style="margin-left: 20px;">Contact Us:</p><br>
+			<a href="mailto:contactUs@primestore.com?subject=Need Support&body=I need support on the following issue" target="_blank" 
+			class="footer-link" style="margin-left: 20px;">
+				<i class="fas fa-envelope"></i> contactUs@primestore.com</a><br>
+			<a href="tel:1234567890" title="click to make a call" class="footer-link" style="margin-left: 20px;">
+				<i class="fas fa-phone" style="transform: rotate(90deg);"></i> 0000-1234-5678
+			</a><br>
+		</div>
+		<div class="vl"></div>
+		<div class="Global-social">
+			<p class="footer-tag" style="margin-left: 100px;">Social</p><br>
+			<div class="social-ico fb-logo"><a href="#" class="footer-link Social" ><i class="fab fa-facebook"></i></a></div>
+			<div class="social-ico youtube-logo"><a href="#" class="footer-link Social" ><i class="fab fa-youtube"></i></a></div><br>
+			<div class="social-ico insta-logo"><a href="#" class="footer-link Social" ><i class="fab fa-instagram"></i></a></div>
+			<div class="social-ico twitter-logo"><a href="#" class="footer-link Social"><i class="fab fa-twitter"></i></a></div><br>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	//alert(localStorage.getItem("user_name"));
+	var body=document.documentElement;
+	var sticky_header=document.getElementById("sticky");
+	var pos=0;
+	var prev_scroll=0;
+	var top_btn=document.getElementById("backTo_Top");
+	window.onscroll = function() {showScroll();setScroll();};
+
+	function showScroll()
+	{
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+			top_btn.style.display="block";
+		else
+			top_btn.style.display="none";
+	}
+
+	function scrollToTop()
+	{
+		var position = document.body.scrollTop || document.documentElement.scrollTop;
+		if (position)
+		{
+			window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+			scrollAnimation = setTimeout("scrollToTop()", 15);
+		} 
+		else clearTimeout(scrollAnimation);	
+	}
+
+	function setScroll()
+	{
+	//	alert(pos);
+		pos=body.scrollTop;
+		checkScroll(pos);
+	}
+	
+	function checkScroll(pos)
+	{
+		if(prev_scroll>pos && pos>=250)	//if(pos>=603)
+		{
+			sticky_header.style.transition="all 0.5s ease-in-out";
+			sticky_header.style.opacity="1";
+			sticky_header.style.visibility="visible";//display="block";
+			sticky_header.style.position="fixed";
+			sticky_header.style["boxShadow"]="0 0 6px 1px rgba(29,17,51,.20)";//"8px 8px 16px 8px rgba(0,0,0,0.25)";
+
+			sticky_header.style.marginTop = "0px";
+		}
+		else
+		{
+		//	document.getElementById("sticky").style.position="sticky";
+			sticky_header.style.transition="all 0.8s ease-in-out";
+			sticky_header.style.visibility="hidden";
+			sticky_header.style.opacity="0";
+			sticky_header.style["boxShadow"]="none";//display="none";
+			sticky_header.style.marginTop="-100px";
+		//	sticky_header.style.transform="translate(0,110%)";
+		}
+		prev_scroll=pos;
+	}
+
+	var slides=document.getElementsByClassName("banner");
+	var x=0;
+	var size=slides.length*1000;
+	document.getElementById("move").style.width=size+"px";
+	function move(n)
+	{
+		if(n==-1)
+		{
+			if (x==-(size-1000))
+				x=0;
+			else
+				x-=1000;
+			
+			document.getElementById("move").style.transform="translateX("+x+"px)";
+		}
+		if(n==1 && x!=size)
+		{
+			if(x==0)
+				x=-(size-1000);
+			else
+				x+=1000
+			document.getElementById("move").style.transform="translateX("+x+"px)";
+		}
+		
+	}
+
+	function teleport(dest)
+	{
+	//	alert(dest);
+		if(dest=="iphoneSE")
+			open("iphoneSE.html",'_blank');
+		else if(dest=="redmi9")
+			open("redmi9.html",'_blank');
+		else if(dest=="pocox2")
+			open("pocox2.html",'_blank');
+		else if(dest=="narzo10")
+			open("narzo10.html",'_blank');
+		
+	}
+
+</script>
+</html>

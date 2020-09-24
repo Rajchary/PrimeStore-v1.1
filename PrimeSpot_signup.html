@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime Store Signup page</title>
+	<link rel = "icon" href = "https://img.icons8.com/emoji/96/000000/p-button-emoji.png" type="image/x-icon">
+	<link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Lemonada' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="CSS\PrimeStoreStyles.css">
+	<style type="text/css">
+		h1
+		{
+			font-family: 'Lobster Two';
+			font-size:35pt;
+			font-style: bold;
+			margin-top: 5%;
+			display: inline-block;
+		}
+		label.genderTag
+		{
+			font-family: 'Lobster Two';
+			font-size: 20pt;
+			font-style: bold;
+			color: white;
+			float: left;
+			margin: 5% 10%;
+		}
+
+		div.gender
+		{
+			font-family: 'Lobster Two';
+			font-style: bold;
+			font-size: 20pt;
+			display: inline-block;
+			position: relative;
+			margin-top: 9%;
+			margin-left: -50%;
+			text-align: left;
+		}
+
+		div.Buttons
+		{
+			text-align: left;
+			margin-left: 9%;
+			margin-top: 10%; 
+		}
+		a
+		{
+			color: black;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body class="signupBody">
+	<div style="display: inline-block;">
+	
+	<div><img src="images/SVG/logo_rel2.png" style="width: 50%;float: left;" /></div>
+
+	<div class="signupForm" style="float: left;">
+		<a href="welcomePrimeStore.html" target="_blank"><h1>PrimeStore</h1></a>
+		<form name="Form" id="signupForm" action="homePage.html" class="sForm" onsubmit="return validateFields()">
+			<input type="text" name="firstname" placeholder="First Name" class="input" id="firstname"  required />
+			<input type="text" name="lastname" placeholder="Last Name" class="input" id="lastname" required /><br>
+			<input type="text" name="email" placeholder="Email (Username)" class="input" id="Username" required />
+			<input type="text" name="mobile" placeholder="Mobile number" class="input" id="mobile" required /><br>
+			<input type="text" name="occupation" placeholder="occupation(optional)" class="input" id="occupation" required />
+			<input type="date" name="date" id="birthday" class="input" required style="outline: none;" />
+			<input type="password" name="psd" placeholder="Password" class="input" id="psd" required />
+			<input type="password" name="cpsd" placeholder="Re-type your password" class="input" id="cpsd" required /><br>
+			<label class="genderTag">Gender :</label><br>
+			<div class="gender">
+				<input type="radio" name="Gender" id="male" value="Male" required />
+				<label for="male" class="">Male</label><br>
+				<input type="radio" name="Gender" id="female" value="Female" required />
+				<label for="female">Female</label><br>
+				<input type="radio" name="Gender" id="NS" value="Prefer not to say" required />
+				<label for="NS">Prefer not to say.</label><br>
+			</div><br><br>
+			<div class="Buttons">
+				<input type="submit" name="submit" value="Register" class="signupButtons" />
+				<input type="reset" name="reset" value="Clear" class="signupButtons" id="reset" />
+			</div>
+		</form>  
+	</div>
+	</div>
+</body>
+<script type="text/javascript">
+	function check()
+	{alert("Fine");
+return false;}
+	function validateFields()
+	{
+		
+	//	alert("done");
+		var name=document.getElementById("lastname").value;
+		var status=false;
+	/*	var username=document.getElementById("Username").value;
+		var password=document.getElementById("psd").value;
+		var mobile=document.getElementById("mobile").value;
+		var bday=document.getElementById("birthday").value;
+		var occupation=document.getElementById("occupation").value;
+		var cpsd=document.getElementById("cpsd").value;
+		var gender_grp=document.getElementsByName("Gender");
+		var gender;
+		
+
+
+		for(i=0;i<gender_grp.length;i++)
+		{
+			if(gender_grp[i].checked)
+				gender=gender_grp[i].value;
+		}
+		
+		if(name==null||name=="")
+		{
+			status=false;
+			name=prompt("Please enter your name..");
+		}
+		else
+			status=true;
+		if (username==null||username=="")
+		 {
+		 	status=false;
+		 	username=prompt("Please enter your Email to reach you out..");
+		 }
+		 else
+		 	status=true;
+		 if (mobile==null||mobile==""||mobile.length<10) 
+		 {
+		 	status=false;
+		 	mobile=prompt("Please enter valid Mobile number..");
+		 }
+		 else
+		 	status=true;
+		 if (password==null||password=="") 
+		 {
+		 	status=false;
+		 	password=prompt("Please enter valid Password..");
+		 }
+		 else
+		 	status=true;
+		 if (cpsd==null||cpsd==""||!(password==cpsd))
+		  {
+		  	status=false;
+		  	cpsd=prompt("Both the passwords should match..");
+		  }
+		  else
+		  	status=true;
+		  if (gender==null)
+		  {
+		  	status=false;
+		  	alert("Please select your gender to proceed..");
+		  }
+		  else
+		  	status=true;
+		  if(status)*/
+		 // 	document.getElementById("signupForm").reset();
+		  	localStorage.setItem("user_name",name);
+		//  alert("Posted");
+
+		 return true;
+	}
+</script>
+</html>

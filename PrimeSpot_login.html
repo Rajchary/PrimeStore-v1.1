@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		PrimeSpot login
+	</title>
+	<link rel = "icon" href = "https://img.icons8.com/emoji/96/000000/p-button-emoji.png" type="image/x-icon">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Volkhov' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+	<script type="text/javascript" src="script\script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS\PrimeStoreStyles.css">
+
+	<style type="text/css">
+		h1
+		{
+			font-family: 'Lobster';
+			font-style: bold italic;
+			margin-top: 100px;
+			margin-left: 33%;
+			color: #442C2E;
+			margin-top: 15%;
+			display: inline-block;
+			font-size: 350%;
+		}
+		h1:hover
+		{
+			cursor: pointer;
+		}
+		label
+		{
+			font-size:15pt;
+			font-style: bold;
+			font-family: 'Volkhov';
+			
+		}
+		a
+		{
+			text-decoration:none;
+		}
+		.remember:hover
+		{
+			cursor: pointer;
+		}
+		#close
+		 {
+		 	color: red;
+		 	margin-top: -130px; 
+		    float:right;
+		    display:inline-block;
+		    font-size: 20pt;
+		    background:black;
+		    margin-right: 5px;
+		}
+		#close:hover
+		{cursor: pointer;}
+		.hint
+		{
+			font-size: 20pt;
+			font-family: Russo One;
+			margin-left: 35%;
+			text-align: center;
+			width: 350px;
+			border-radius: 20px;
+			background-color: white;
+			overflow: hidden;
+		}
+	</style>
+
+</head>
+
+<body class="loginBody">
+	
+	<!--<div class="hint">
+		<p style="margin-right: 25px;">Please fill the details to check the functionality</p>
+		<span id='close' onclick='this.parentNode.parentNode.removeChild(this.parentNode); return true;' title="close">x</span>
+	</div>-->
+	<!--<div style="display: inline-block;">
+		<div><img src="images/SVG/Login.png" style="width: 40%;float: left;"></div>-->
+	<div class="loginContainer" style="float: left;">
+		<a href="welcomePrimeStore.html" target="_blank"><h1>PrimeStore</h1></a><br>
+		<form name="PrimeStore_loginForm" action="homePage.html" onsubmit="return validateFields()">
+			<input type="text" name="username" placeholder="Username" class="loginFields" id="username" required /><br>
+			<br><br>
+			<input type="password" name="password" placeholder="Password" class="loginFields" id="password" required />
+			<br><br>
+			<input type="checkbox" name="remember" id="rememberCheck" /><label for="rememberCheck" class="remember">Stay logged in</label><br><br>
+			<input type="submit" name="submit" value="Login" class="loginButtons" />
+			<input type="reset" name="reset" value="Clear" class="loginButtons" />
+		</form><br>
+		<a href="forgot.html" class="actionBanner" target="_blank">Forgot Password ?</a>
+		<a href="PrimeSpot_signup.html" class="actionBanner toRight">Signup-></a>
+		<br><br><br>
+	</div><img src="images/SVG/Login.png" style="width: 30%;margin-top:-280px;" />
+	<br><br>
+
+</body>
+<script type="text/javascript">
+		var status=false;
+		function validateFields()
+		{
+
+			var username=document.getElementById("username").value;
+			var password=document.getElementById("password").value;
+			
+			var repeat=true;
+			if(username==null||username=="")
+				{
+					status=false;
+					username=prompt("Username cannot be left as empty !!");
+				}
+				else
+				{
+					username.innerHTML=username;
+					repeat=false;
+					status=true;
+				}
+					
+			repeat=true;
+			
+				if (password==null||password=="") 
+				{
+					status=false;
+					password=prompt("Password cannot be left as empty !!");
+				}
+				else
+				{
+					repeat=false;
+					status=true;
+				}
+				if(status)
+					localStorage.setItem("user_name",username);
+				
+			return status;
+			
+		}
+
+	</script>
+</html>
