@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feed Back</title>
+	<link rel="stylesheet" type="text/css" href="CSS\PrimeStoreStyles.css">
+	<link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
+	<style type="text/css">
+		.feedBtns
+		{
+			margin-top: 15px;
+			width: 20%;
+			height: 50px;
+			border-radius: 25px;
+			text-align: center;
+			background-color: #6b0f1a;
+			background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+			font-family: Russo One;
+			font-size: 150%;
+			color: white;
+			transition: color 0.8s ease;
+		}
+		.feedBtns:hover
+		{
+			background-color: #861657;
+			background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+			color: black;
+			cursor: pointer;
+		}
+		.feedBtns:focus
+		{
+			outline: none;
+		}
+	</style>
+</head>
+<body class="feedBody">
+	<div class="feedContainer">
+		<form action="products.html">
+			<p>Rate your experience<br>for U/I of website</p>
+			<input type="range" name="range" id="rating" min="1" max="10" value="0" title="Rate your experience"><br>
+			<p id="rated"></p>
+			<input type="text" name="username" id="username" class="feedInputs outline" placeholder="username"><br>
+			<p>Help us improve our efforts</p>
+			<textarea id="review" rows="4" cols="50" placeholder="Write a review" class="outline" style="border-radius: 10px;"></textarea><br>
+			<button class="feedBtns" onclick="takeRate()">Rate !</button>
+			<button class="feedBtns" type="reset" onclick="clearR()">Clear</button>
+		</form>
+		<br><br>
+	</div>
+</body>
+<script type="text/javascript">
+	var rating=document.getElementById("rating");
+	var rated=document.getElementById("rated");
+
+	rating.oninput=function(){
+		rated.innerHTML=this.value;
+	}
+	function clearR()
+	{
+		rated.innerHTML="";
+	}
+	function takeRate()
+	{
+		alert("Thank you for rating..");
+		window.open("products.html","_self");
+	}
+</script>
+</html>

@@ -80,16 +80,28 @@ body.loginBody
 	/*background-color: #1fd1f9;
 	background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);*/
 }
+.Logo_Name
+{
+	font-family: 'Lobster';
+	font-style: bold italic;
+	margin-left: 33%;
+	color: navy;
+	margin-top: 3%;
+	display: inline-block;
+	font-size: 350%;
+	cursor: pointer;
+}
 div.loginContainer
 {
 	border-color: black;
-	margin-top: 100px;
+	margin-top: 20px;
 	margin-left: 30%;
 	border-radius: 35px;
 	background-color: #9921e8;
 	background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
 	width: 42%;
-	height: 100%;
+	height: 70%;
+	position: fixed;
 }
 
 .loginFields, select
@@ -130,14 +142,70 @@ div.loginContainer
 {
 	outline: none;
 }
-input[type=checkbox]
-{
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 8%;
+	height: 28px;
+	display: inline-block;
 	margin-left: 15%;
-}
-input[type=checkbox]:hover
-{
+  }
+  
+  .switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  .slider {
+	position: absolute;
 	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+	/*-webkit-transition: .4s;*/
+	transition: all .4s;
 }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 20px;
+	width: 20px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	/*-webkit-transition: .4s;*/
+	transition: .3s;
+  }
+  
+  input:checked + .slider {
+	background-color: #76FF03;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 3px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(88%);
+	-ms-transform: translateX(88%);
+	transform: translateX(88%);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 100px;
+  }
+  
+  .slider.round:before 
+  {
+	border-radius: 70%;
+  }
+
 .actionBanner
 {
 	text-decoration: none;
@@ -583,21 +651,25 @@ div.logo_container
 	margin-bottom: 50px;
 	display: none;
 	z-index: 1000;
-	opacity: 0.6;
+	opacity: 0.4;
 }
 .parent_go-Top:hover
 {
 	opacity: 1;
 }
+.parent_go-Top:hover .child_go-Top
+{
+	border-radius: 50%;
+}
 .parent_go-Top > .child_go-Top
 {
 	display: table-cell;
 	vertical-align: middle;
-	background-color: yellow;
+	background-color: #f3ca20;
 	color: black;
 	cursor: pointer;
 	text-align: center;
-	border-radius: 50%;
+	border-radius: none;
 	bottom: 0;
 	right: 0;
 	margin-right: 50px;
@@ -606,6 +678,7 @@ div.logo_container
 	width: 50px;
 	font-size: 35px;
 	box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
+	transition: all 0.3s;
 }
 .ScrollTag_link
 {

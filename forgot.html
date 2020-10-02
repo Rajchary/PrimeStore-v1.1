@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Password Recovery
+	</title>
+	<link rel = "icon" href = "https://img.icons8.com/emoji/96/000000/p-button-emoji.png" type="image/x-icon">
+	<link href='https://fonts.googleapis.com/css?family=Black Ops One' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="CSS\PrimeStoreStyles.css">
+	<style type="text/css">
+		.background
+		{
+			background: url("https://image.freepik.com/free-vector/blue-bright-technological-background_36402-430.jpg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+		.input
+		{
+			border-color: white;
+			border-radius: 10px;
+			padding: 12px 20px;
+			width:80%;
+			margin-top: 30px;
+			margin-left: 15px;
+			height: 30px;
+		}
+		.input:focus
+		{
+			outline: none;
+		}
+		.input:focus
+		{
+			outline: none;
+		}
+		.submit
+		{
+			border-color: #FFCC80;
+			border-radius: 10px;
+			padding: 12px 20px;
+			width:90%;
+			background-color: #FFCC80;
+			margin-top: 30px;
+			margin-left: 17px;
+			font-size:14pt;
+		}
+		.submit:hover
+		{
+			cursor: pointer;
+			background-color: #E65100;
+			border-color: #E65100;
+			color: white;
+		}
+		div.recovery_panel
+		{
+			width:400px;
+			height:250px;
+			margin-left: 16%;
+			margin-top: 30px;
+		}
+		p
+		{
+			font-weight: bold;
+			font-family: 'Black Ops One';
+			color:#D50000;
+			margin-left: 350px;
+			margin-top: 25px;
+			font-size: 35pt;
+		}
+		.block
+		{
+			display: none;
+		}
+	</style>
+</head>
+<body style="background-color: black;">
+	<h1 class="Logo_Name" style="color: Orange;margin-left: 40%;">PrimeStore</h1>
+	<p>Recover you passkey here</p>
+<div style="float: left;"><img src="images\SVG\Searching-5.png" style="width: 450px;height:350px;"/></div>
+<div class="recovery_panel" style="float: left;">
+	<form name="recovery" method="post" onsubmit="return validateFields()">
+		<input type="text" name="username" placeholder="Username" id="username" required class="input">
+		<input type="submit" name="pushOTP" value="Authenticate" class="submit">
+	</form>
+		<input type="text" name="OTP" placeholder="OTP" id="OTP" required class="block input">
+		<button class="block submit">Recover</button>
+</div>
+
+</body>
+<script type="text/javascript">
+	function validateFields()
+	{
+		username=document.recovery.username.value;
+		alert(username);
+		if(username==null||username=="")
+		{
+			username=prompt("please enter valid username !!!!");
+			return false;
+		}
+		else
+			return true;
+	}
+</script>
+</html>
