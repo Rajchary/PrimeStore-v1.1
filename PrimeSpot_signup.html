@@ -35,46 +35,77 @@
 			margin-top: 9%;
 			margin-left: -50%;
 			text-align: left;
+			cursor: pointer;
 		}
 
 		div.Buttons
 		{
 			text-align: left;
 			margin-left: 9%;
-			margin-top: 10%; 
+			margin-top: 6%; 
 		}
 		a
 		{
 			color: black;
 			text-decoration: none;
 		}
+		.signup_image
+		{
+			display:none;
+		}
+		.input
+		{
+			width: 80%;
+			height: 25px;
+		}
+		.signupForm
+		{
+			margin-left: 25%;
+		}
+		
+		/*Using @meadia we can deffer the look of the webPage on defferent screens*/
+		@media only screen and (min-width: 950px)
+		{
+			.signup_image
+			{
+				display: block;
+			}
+			.input
+			{
+				width: 40%;
+				height: 50px;
+				color: green;
+			}
+			.signupForm{margin-left: 0%;}
+			
+		}
 	</style>
 </head>
 <body class="signupBody">
 	<div style="display: inline-block;">
 	
-	<div><img src="images/SVG/logo_rel2.png" style="width: 50%;float: left;" /></div>
+	<div class="signup_image"><img src="images/SVG/logo_rel2.png" style="width: 50%;float: left;" /></div>
 
 	<div class="signupForm" style="float: left;">
 		<a href="welcomePrimeStore.html" target="_blank"><h1>PrimeStore</h1></a>
 		<form name="Form" id="signupForm" action="homePage.html" class="sForm" onsubmit="return validateFields()">
-			<input type="text" name="firstname" placeholder="First Name" class="input" id="firstname"  required />
+			<input type="text" name="firstname"  placeholder="First Name" class="input" id="firstname"  required />
 			<input type="text" name="lastname" placeholder="Last Name" class="input" id="lastname" required /><br>
 			<input type="text" name="email" placeholder="Email (Username)" class="input" id="Username" required />
 			<input type="text" name="mobile" placeholder="Mobile number" class="input" id="mobile" required /><br>
-			<input type="text" name="occupation" placeholder="occupation(optional)" class="input" id="occupation" required />
-			<input type="date" name="date" id="birthday" class="input" required style="outline: none;" />
+			<input type="text" name="occupation" spellcheck="true" placeholder="occupation(optional)" class="input" id="occupation" required />
+			<input type="date" name="date" id="birthday" class="input" required style="outline: none; cursor: pointer;" />
 			<input type="password" name="psd" placeholder="Password" class="input" id="psd" required />
 			<input type="password" name="cpsd" placeholder="Re-type your password" class="input" id="cpsd" required /><br>
 			<label class="genderTag">Gender :</label><br>
 			<div class="gender">
 				<input type="radio" name="Gender" id="male" value="Male" required />
-				<label for="male" class="">Male</label><br>
-				<input type="radio" name="Gender" id="female" value="Female" required />
-				<label for="female">Female</label><br>
+				<label for="male" class="label_Cursor">Male</label>&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="Gender" id="female" value="yes" required />
+				<label for="female"class="label_Cursor">Female</label>&nbsp;&nbsp;&nbsp;
 				<input type="radio" name="Gender" id="NS" value="Prefer not to say" required />
-				<label for="NS">Prefer not to say.</label><br>
-			</div><br><br>
+				<label for="NS" class="label_Cursor">Prefer not to say.</label><br>
+			</div>
 			<div class="Buttons">
 				<input type="submit" name="submit" value="Register" class="signupButtons" />
 				<input type="reset" name="reset" value="Clear" class="signupButtons" id="reset" />

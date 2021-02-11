@@ -255,11 +255,23 @@ div.signupForm
 	font-style: bold;
 	margin-right: 15px;
 }
+.label_Cursor
+{
+	cursor:pointer;
+}
 .input:focus
 {
 	outline: none;
 }
-
+/*@media only screen and (min-width: 950px)
+{
+	.signupForm
+	{
+		margin-left:0%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}*/
 .signupButtons
 {
 	border-radius: 25px;
@@ -369,6 +381,61 @@ a.navigation
 	margin-left: 20%;
 	margin-top: 2%;
 	cursor: pointer;
+}
+div.slide_container
+{
+	
+	margin-top: 20px;
+	margin-left: 12.5%;
+	width: 75%;
+	height: auto;
+	border:none;
+	display: inline-block;
+	overflow: hidden;
+	cursor: pointer;
+	
+}
+div.slides
+{
+	width:300%;
+	height: auto;
+	-webkit-transition:all 1.0s ease-in-out;
+	-moz-transition:all 1.0s ease-in-out;
+	-o-transition:all 1.0s ease-in-out;
+	transition:all 0.3s ease-in-out;
+	float: left;
+}
+.banner
+{
+	text-align: center;
+	width: 1000px;
+	height: 250px;
+	overflow: hidden;
+	float: left;
+	cursor: pointer;
+	z-index: -1;
+}
+
+.Banner1
+{
+	background-color: black;
+}
+.Banner2
+{
+	background-color: black;
+}
+.Banner3
+{	
+	text-align: center;
+	background-color: black;
+}
+.Banner4
+{
+	background-color: black;
+}
+.Banner5
+{
+	background-color: black;
 }
 
 
@@ -660,6 +727,7 @@ div.logo_container
 .parent_go-Top:hover .child_go-Top
 {
 	border-radius: 50%;
+	transform: rotate(360deg);
 }
 .parent_go-Top > .child_go-Top
 {
@@ -720,3 +788,6 @@ div.logo_container
 {
 	display: inline-block;
 }
+
+													/* ToolTip Styling*/
+													
