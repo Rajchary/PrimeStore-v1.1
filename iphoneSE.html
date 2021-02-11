@@ -71,7 +71,7 @@
 				</div>
 			</div>
 			<ul class="mobile-nav" id="mobileNav">
-				<li class="mobile-link">Electronics</li>
+				<a href="#"><li class="mobile-link">Electronics</li></a>
 				<li class="mobile-link">Home Appliances &nbsp;<i class="fas fa-igloo"></i></li>
 				<li class="mobile-link">Go Smart</li>
 				<li class="mobile-link">Covid-19 Essentials<i class="fas fa-head-side-mask"></i></a></li>
@@ -86,6 +86,7 @@
 		<a href="#" class="sticky-link">Covid-19(Essentials) <i class="fas fa-head-side-mask"></i></a>
 		<a href="#" class="sticky-link"><i class="fas fa-shopping-cart"></i></a>
 	</div>
+	<div id="body-overlay-div">
 	<center><h1 class="product-name">Apple iPhone SE (Red, 64 GB)</h1></center>
 	<div class="  imageContainer">
 		<div class="image-prev" onclick="plusSlides(-1)">&#10094;</div>
@@ -123,9 +124,10 @@
 		</div>
 	</div>
 	
-	<center><p class="cost">₹35,999</p></center>
+	<center><p class="cost" aria-hidden="true">₹35,999</p></center>
 	
 	<div class="iphoneSpecs">
+		<form name="product_specifications" action="something.html" method="post">
 		<table>
 			<tr>
 				<th style="text-align: center; color: white;"  class="single-line-detail">Specs</th>
@@ -169,7 +171,9 @@
 				<td class="single-line-detail">A13 Bionic Chip with 3rd Gen Neural Engine</td>
 			</tr>
 		</table>
+		</form>
 	</div>
+</div>
 	<div class="buttons">
 		<button class="actionBtns" onclick="alert('Item added to Cart')">
 			Add to Cart <i class="fas fa-cart-arrow-down"></i>
@@ -198,5 +202,9 @@
 		</div>
 	</footer>
 </body>
+<script>
+	
+</script>
 <script src="JS/prduct-scripts.js"></script>
+
 </html>
